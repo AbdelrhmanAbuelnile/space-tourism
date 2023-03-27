@@ -4,7 +4,7 @@
     <Header/>
 
     <main class="flex flex-col lg:flex-row justify-center lg:justify-around items-center mb-6 px-4 lg:px-16">
-        <div class="text-slate-400 w-full text-center lg:text-justify lg:w-3/6 font-light tracking-wide">
+        <div class="text-green-400 w-full text-center lg:text-justify lg:w-3/6 font-light tracking-wide">
             <h3 class="text-xl"> 
                 So, you want to travel to
             </h3>
