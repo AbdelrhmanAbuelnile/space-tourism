@@ -35,7 +35,7 @@ const change = ()=>{
     manga.style.display = "block"
     manga.style.width = "100%"
     manga.style.height = "100%"
-    nov.src = "../assets/shared/icon-close.svg"
+    // nov.src = "../assets/shared/icon-close.svg"
 
 }
 
