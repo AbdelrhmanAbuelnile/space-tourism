@@ -12,7 +12,7 @@
       v-show="index === slideIndex - 1"
     >
       <div class=" img mt-4 lg:mt-0 lg:order-1 lg:w-2/5">
-        <img :src="`_nuxt` + slide.images.png" :alt="slide.imgAlt" class="w-4/4 mx-auto max-h-" />
+        <img :src="`/_nuxt` + slide.images.png" :alt="slide.imgAlt" class="w-4/4 mx-auto max-h-" />
       </div>
       <div class="flex flex-col justify-center items-center lg:gap-2 lg:w-2/5 lg:items-start lg:max-h-80">
         
