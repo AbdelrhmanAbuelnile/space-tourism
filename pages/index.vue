@@ -15,7 +15,7 @@
                 we’ll give you a truly out of this world experience!
             </p>
         </div>
-        <NuxtLink to="/destination" class="mt-10 lg:mt-28 lg:mr-10 uppercase rounded-full bg-white flex justify-center items-center w-52 h-52 text-4xl font-light text-slate-900">explore</NuxtLink>
+        <NuxtLink to="/destination" class="circle mt-10 lg:mt-28 lg:mr-10 uppercase rounded-full bg-white flex justify-center items-center w-52 h-52 text-4xl font-light text-slate-900 duration-700">explore</NuxtLink>
     </main>
 
 </div>
@@ -31,7 +31,11 @@ import data from '../data.json';
     background-size: cover;
     overflow: hidden;
 }
-
+.circle:hover {
+    transform: scale(1.2);
+    background: #999;
+    color: #fff;
+}
 main {
     margin-top:100px;
 }
