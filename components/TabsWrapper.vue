@@ -1,6 +1,5 @@
 <script setup>
 import { useSlots, ref , provide} from 'vue'
-import data from '../data.json' 
 const slots = useSlots()
 const tabTitles = ref(slots.default().map(tab => tab.props.title))
 const selectedTitle = ref(tabTitles.value[0])

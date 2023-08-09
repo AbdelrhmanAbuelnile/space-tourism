@@ -2,13 +2,13 @@
     <div id="home" class=" min-w-screen min-h-screen">
         <Header/>
         
-        <div class="flex flex-col justify-center items-center mx-auto gap-5 lg:items-start lg:felx-row lg:px-10 lg:justify-between">
+        <div class="flex flex-col justify-center items-center mx-auto gap-9 lg:items-start lg:felx-row lg:px-10 lg:justify-between">
             <h2 class="text-center text-2xl tracking-widest text-white"><span class="text-gray-600">01</span> Pick your destination</h2>
             <div class="lg:flex lg:flex-row lg:items-center lg:justify-between">
                 <img src="../assets/destination/image-moon.png" class="w-3/4 lg:w-2/6 lg:mx-0 mx-auto my-10 lg:my-0 lg:overflow-hidden" alt="destination image">
                 <div class="text-white text-lg lg:w-2/5 lg:mx-0">
                     <TabsWrapper class="w-5/5 lg:mx-0 text-center ">
-                        <TabItem title="moon">
+                        <TabItem title="moon" class=" lg:h-96" data-index="0" @click="changeSrc">
                             <div class="bor text-gray-500">
                                 {{ data.destinations[0].description }}
                             </div>
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                         </TabItem>
-                        <TabItem title="mars">
+                        <TabItem title="mars" class=" lg:h-96" data-index="1" @click="changeSrc">
                             <div class="bor text-gray-500">
                                 {{ data.destinations[1].description }}
                             </div>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </TabItem>
-                        <TabItem title="europa">
+                        <TabItem title="europa" class=" lg:h-96" data-index="2" @click="changeSrc">
                             <div class="bor text-gray-500">
                                 {{ data.destinations[2].description }}
                             </div>
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                         </TabItem>
-                        <TabItem title="titan">
+                        <TabItem title="titan" class=" lg:h-96" data-index="3" @click="changeSrc">
                             <div class="bor text-gray-500">
                                 {{ data.destinations[3].description }}
                             </div>
@@ -79,8 +79,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import data from '../data.json' 
 
+const imgs = ["../assets/destination/image-moon.png", "../assets/destination/image-mars.png", "../assets/destination/image-europa.png", "../assets/destination/image-titan.png"]
+
+const changeSrc = (imgs) => {
+
+}
 </script>
 
 <style scoped>
